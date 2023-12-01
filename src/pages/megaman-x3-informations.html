@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaMan X 3 - Page</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- background image -->
+    <div id="bg-img"></div>
+
+    <!-- main content -->
+    <main>
+
+        <div class="homepage-link">
+            <a href="/index.html"><img src="/src/img/megaman.gif" alt="home-link" id="home-link"></a>
+        </div>
+
+        <!-- homepage -->
+        <div class="container-info">
+
+            <div class="info-left">
+
+                <div class="logo">
+                    <img alt="MmxLogo" id="logo">
+                </div>
+
+                <div class="features">
+
+                    <h2 class="subtitle"> - Informações - </h2>
+
+                    <ul class="features-list">
+                        <li><span class="bold">Lançamento:</span> 1 de Novembro de 1995.</li>
+                        <li><span class="bold">Desenvolvedora:</span> Capcom.</li>
+                        <li><span class="bold">Gênero:</span> Acão, Aventura, Plataforma.</li>
+                        <li><span class="bold">Plataforma:</span> Super Nintendo (SNES).</li>
+                    </ul>
+
+                    <h2 class="subtitle"> - Downloads - </h2>
+
+                    <ul class="features-list">
+                        <li><span class="bold">ROM:</span> <a href="https://serve.emulatorgames.net/roms/super-nintendo/Mega%20Man%20X%203%20(U).zip"><button class="btn-download">BAIXAR</button></a></li>
+                        <li><span class="bold">Emulador(ZSnes):</span> <a href="https://static.emulatorgames.net/emulators/super-nintendo/zsnesw151-402.zip"><button class="btn-download">BAIXAR</button></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="info-right">
+                
+                    <div class="trailer-video">
+                        <iframe width="768" height="567" src="https://www.youtube.com/embed/3PwaZd5RX3A?si=3ahLx2igO-7If-MD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <!-- <video src="https://www.youtube.com/watch?v=MGt80S6uOkY" controls width="768" height="567" class="video"></video> -->
+                    </div>
+                    <p class="caption">Gameplay</p>
+                
+            </div>
+
+        </div>
+
+    </main>
+    
+
+        <!-- JAVA SCRIPT CODE FOR LOGO -->
+    <script>
+
+        const imgLogo = document.getElementById('logo');
+
+        imgLogo.src = '/src/img/megamanx3-logo.png';
+        imgLogo.style.width = '100%';
+        imgLogo.style.height = '70%';
+
+    </script>
+
+</body>
+</html>

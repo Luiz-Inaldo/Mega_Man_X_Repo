@@ -1,0 +1,278 @@
+@import url(/src/css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.btn-download {
+    width: 70px;
+    height: 30px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #e40d05;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    transform: scale(1.1);
+}
+
+/* CSS relacionado a imagem de fundo */
+
+#bg-img {
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/img/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#bg-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.7);
+}
+
+/* CSS relacionado ao conteúdo principal (main) */
+
+main {
+    position: relative;
+    font-family: 'VT323', monospace;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.homepage-link {
+    position: absolute;
+    top: 10;
+    left: -7px;
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(64, 128, 201, 0.9);
+    box-shadow: 5px 3px 3px #aaa;
+}
+
+#home-link {
+    width: 150px;
+    height: 120px;
+    transition: 0.3s;
+}
+
+#home-link:hover {
+    transition: 0.3s;
+    transform: scale(0.8);
+}
+
+.container {
+    background-color: rgba(64, 128, 201, 0.9);
+    width: 100%;
+    height: 90vh;
+    border: 20px ridge #b3b3b3;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.principal-title {
+    color: #eee;
+    font-size: 60px;
+    text-shadow: 3px 3px 4px #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#mx-title {
+    color: #ff0;
+    font-style: italic;
+}
+
+.paragraph {
+    font-size: 40px;
+    padding: 1em;
+    width: 80%;
+}
+
+/* CSS relacionado as divs dos jogos */
+
+.games {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 15px ridge #b3b3b3;
+    background-color: #03a871;
+    box-shadow: 3px 3px 3px #000;
+    max-width: 100%;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.game-img {
+    position: relative;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.tag-snes {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #6603a8;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.tag-ps1 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #038fa8;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.tag-ps2 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #37a803;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.game-img:hover {
+    transition: 0.5s;
+    transform: translate(20px, -10px);
+}
+
+#mmx {
+    width: 300px;
+    height: 200px;
+}
+
+#mmx2, #mmx3, #mmx4, #mmx5 {
+    width: 250px;
+    height: 100px;
+    
+}
+
+#mmx6 {
+    width: 270px;
+    height: 210px;
+}
+
+#mmx7{
+    width: 300px;
+    height: 180px;
+}
+
+#mmx8{
+    width: 250px;
+    height: 110px;
+}
+
+/* CSS relacionado a página de informações */
+
+.container-info {
+    background-color: rgba(64, 128, 201, 0.9);
+    border: 20px ridge #b3b3b3;
+    width: 100%;
+    height: 90vh;
+    padding: 3rem;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+    gap: 1rem;
+}
+
+/* Informações painel esquerdo*/
+
+.info-left {
+    width: 40%;
+    min-height: 100%;
+    border: 15px ridge #b3b3b3;
+    background-color: #03a871;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.logo {
+    width: 100%;
+    min-height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.features-list {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+    gap: 0.5rem;
+}
+
+.features {
+    width: 100%;
+    min-height: 69%;
+    padding: 0.5rem;
+}
+
+/* Informações painel direito*/
+
+.info-right {
+    width: 60%;
+    min-height: 100%;
+    border: 15px ridge #b3b3b3;
+    background-color: #03a871;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.trailer-video {
+    width: 100%;
+    min-height: 90%;
+}
+
+.caption {
+    font-size: 30px;
+    text-align: center;
+}
