@@ -23,7 +23,8 @@
 
 #bg-img {
     z-index: -2;
-    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 100vh;
     background-image: url('/src/img/background.png');
@@ -50,7 +51,7 @@ main {
     color: #eee;
     display: flex;
     flex-direction: column;
-    padding: 50px 200px;
+    padding: 25px 150px;
     max-width: 100%;
     max-height: 100vh;
 }
@@ -59,8 +60,8 @@ main {
     position: absolute;
     top: 10;
     left: -7px;
-    width: 180px;
-    height: 150px;
+    width: 10%;
+    padding: 1rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -70,8 +71,8 @@ main {
 }
 
 #home-link {
-    width: 150px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
     transition: 0.3s;
 }
 
@@ -83,7 +84,7 @@ main {
 .container {
     background-color: rgba(64, 128, 201, 0.9);
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     border: 20px ridge #b3b3b3;
     padding: 3rem;
     display: flex;
@@ -96,7 +97,10 @@ main {
 
 .principal-title {
     color: #eee;
-    font-size: 60px;
+    font-size: 30px;
+    min-height: 20%;
+    display: flex;
+    align-items: center;
     text-shadow: 3px 3px 4px #000;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -108,11 +112,15 @@ main {
 }
 
 .paragraph {
-    font-size: 40px;
+    font-size: 20px;
     padding: 1em;
     width: 80%;
+    min-height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
 /* CSS relacionado as divs dos jogos */
 
 .games {
@@ -121,24 +129,82 @@ main {
     border: 15px ridge #b3b3b3;
     background-color: #03a871;
     box-shadow: 3px 3px 3px #000;
-    max-width: 100%;
+    min-width: 100%;
+    min-height: 65%;
+    max-height: 65%;
     padding: 1rem;
     gap: 0.5rem;
 }
 
 .game-img {
     position: relative;
-    height: 150px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
 }
 
+#megaman1 {
+    background-image: url('/src/img/megamanx-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#megaman2 {
+    background-image: url('/src/img/megamanx2-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#megaman3 {
+    background-image: url('/src/img/megamanx3-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#megaman4 {
+    background-image: url('/src/img/megamanx4-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#megaman5 {
+    background-image: url('/src/img/megamanx5-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#megaman6 {
+    background-image: url('/src/img/megamanx6-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#megaman7 {
+    background-image: url('/src/img/megamanx7-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#megaman8 {
+    background-image: url('/src/img/megamanx8-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
 .tag-snes {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    top: 0;
+    left: 0;
     background-color: #6603a8;
     padding: 5px;
     border-radius: 5px;
@@ -146,8 +212,8 @@ main {
 
 .tag-ps1 {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    top: 0;
+    left: 0;
     background-color: #038fa8;
     padding: 5px;
     border-radius: 5px;
@@ -155,8 +221,8 @@ main {
 
 .tag-ps2 {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    top: 0;
+    left: 0;
     background-color: #37a803;
     padding: 5px;
     border-radius: 5px;
@@ -165,32 +231,7 @@ main {
 .game-img:hover {
     transition: 0.5s;
     transform: translate(20px, -10px);
-}
-
-#mmx {
-    width: 300px;
-    height: 200px;
-}
-
-#mmx2, #mmx3, #mmx4, #mmx5 {
-    width: 250px;
-    height: 100px;
-    
-}
-
-#mmx6 {
-    width: 270px;
-    height: 210px;
-}
-
-#mmx7{
-    width: 300px;
-    height: 180px;
-}
-
-#mmx8{
-    width: 250px;
-    height: 110px;
+    cursor: pointer;
 }
 
 /* CSS relacionado a página de informações */
@@ -200,7 +241,7 @@ main {
     border: 20px ridge #b3b3b3;
     width: 100%;
     height: 90vh;
-    padding: 3rem;
+    padding: 1rem;
     display: flex;
     /* align-items: center;
     justify-content: center; */
@@ -223,7 +264,7 @@ main {
 
 .logo {
     width: 100%;
-    min-height: 30%;
+    min-height: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,8 +272,8 @@ main {
 
 .subtitle {
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .bold {
@@ -240,12 +281,13 @@ main {
 }
 
 .features-list {
-    font-size: 25px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 15px;
     letter-spacing: 1.5px;
     gap: 0.5rem;
+    /* border: 1px solid red; */
 }
 
 .features {
