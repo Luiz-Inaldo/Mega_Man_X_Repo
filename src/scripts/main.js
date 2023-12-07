@@ -32,3 +32,15 @@ links.mmx4.addEventListener('click', () => {
 links.mmx5.addEventListener('click', () => {
     window.location.href = 'src/pages/megaman-x5-informations.html';
 });
+
+links.mmx6.addEventListener('click', () => {
+    window.location.href = 'src/pages/megaman-x6-informations.html';
+});
+
+links.mmx7.addEventListener('click', () => {
+    window.location.href = 'src/pages/megaman-x7-informations.html';
+});
+
+links.mmx8.addEventListener('click', () => {
+    window.location.href = 'src/pages/megaman-x8-informations.html';
+});
